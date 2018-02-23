@@ -8,6 +8,6 @@ print '{}';
 
 my $subject = $q->param("subject");
 my $body = $q->param("body");
-system("echo \"$body\" | mail -s \"$subject\" vbalakine\@bestbuycanada.ca");
+system("echo \"$body\" | mail -s \"$subject\" me\@mydomain.com");
 
 return 1;
