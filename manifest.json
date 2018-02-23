@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "List DTDeals Lots",
+  "version": "0.2",
+  "content_scripts": [
+    {
+      "matches": ["https://empca.dtdeals.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js","script.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["jquery.js","moment.min.js","moment-timezone.min.js","moment-timezone-with-data-2012-2022.min.js","eventPage.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "http://ptl21jmpstna001/*",
+    "storage",
+    "alarms"
+  ]
+}
